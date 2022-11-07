@@ -1,0 +1,37 @@
+hello test
+// CommonJS, every file is a module (by default)
+// Module encapsulated Code (only share minimum)
+// const names = require('./1st-module')
+// const sayHi = require('./2nd-module')
+// const data = require('./alternative')
+//const data = require('./alternative')
+// const os = require('os')
+// const user = os.userInfo()
+
+
+//console.log(user);
+//console.log(`The system Uptime is ${os.uptime()} seconds`);
+
+// const currentOS = {
+//     name:os.type(),
+//     release:os.release(),
+//     totalMem:os.totalmem(),
+//     freeMem:os.freemem(),
+// }
+// console.log(currentOS);
+// sayHi('Hissein')
+// sayHi(names.ahmat)
+// sayHi(names.mahamat)
+
+const path = require('path')
+
+//console.log(path.sep)
+
+const filePath = path.join('/content', 'subfolder', 'test.txt')
+//console.log(filePath)
+
+const base = path.basename(filePath)
+//console.log(base)
+
+const absolute = path.resolve(__dirname, 'content', 'subfolder', 'test.txt')
+console.log(absolute)
